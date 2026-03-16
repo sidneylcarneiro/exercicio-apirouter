@@ -6,7 +6,7 @@ Este projeto faz parte da série de desafios práticos de Backend. O objetivo aq
 Projetos iniciantes tendem a agrupar todas as rotas da aplicação dentro de um único arquivo `main.py`. 
 * **Riscos:** Dificuldade extrema de manutenção, alto risco de *Merge Conflicts* em trabalhos em equipe e uma documentação gerada (Swagger) confusa e sem categorização.
 
-**Evidência da Bagunça (Antes):** *(Todas as rotas agrupadas no bloco "default", dificultando a leitura)* ![Swagger Monolítico](swagger_monolitico.png)
+**Evidência da Bagunça (Antes):** *(Todas as rotas agrupadas no bloco "default", dificultando a leitura)* ![Swagger Monolítico](swagger_monolitico.jpeg)
 
 ## 🟢 A Solução: Divisão de Domínios com APIRouter
 Aplicamos o conceito de **Separation of Concerns (SoC)** (Separação de Responsabilidades). A aplicação foi dividida em "Domínios" (ex: Analistas e Chamados), cada um com seu próprio arquivo de rotas isolado dentro da pasta `routers/`.
@@ -43,7 +43,7 @@ def listar_analistas():
 
 **Evidência da Organização (Depois):** O Swagger UI agora categoriza automaticamente os endpoints, melhorando drasticamente a Experiência do Desenvolvedor (DX) que vai consumir a API.
 
-[Swagger Modular](swagger_modular.png)
+[Swagger Modular](swagger_modular.jpeg)
 
 ## 🛠️ Tecnologias Utilizadas
 
